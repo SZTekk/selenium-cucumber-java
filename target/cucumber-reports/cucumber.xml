@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="86.739" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="As a User I want to test Add to cart product and checkout functionality" name="Verify user add product into cart and complete checkout scenario - Example #1.1" time="44.93">
+<system-out><![CDATA[
+Given I Log into the Demo application.......................................passed
+When I Click on shop menu...................................................passed
+And I Add book "HTML5 Forms" into cart......................................passed
+And I Add book "Functional Programming in JS" into cart.....................passed
+And I Click on cart icon and move to basket page............................passed
+And I Store the total amount of products....................................passed
+And I Click on proceed to checkout button...................................passed
+And I Click on place order button...........................................passed
+Then I Verify order confirmation message....................................passed
+Then I Verify the total amount is correct...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a User I want to test valid and invalid login functionality" name="Verify user valid and invalid login scenario - Example #1.1" time="12.063">
+<system-out><![CDATA[
+Given User move to login screen.............................................passed
+When I Enter "imran.pbh@gmail.com" in login text field......................passed
+And I Enter "" in password text field.......................................passed
+When I Click on login button................................................passed
+Then I Verify the "Password is required" message............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a User I want to test valid and invalid login functionality" name="Verify user valid and invalid login scenario - Example #1.2" time="16.158">
+<system-out><![CDATA[
+Given User move to login screen.............................................passed
+When I Enter "" in login text field.........................................passed
+And I Enter "wrongPasswordTest" in password text field......................passed
+When I Click on login button................................................passed
+Then I Verify the "Username is required" message............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a User I want to test valid and invalid login functionality" name="Verify user valid and invalid login scenario - Example #1.3" time="13.108">
+<system-out><![CDATA[
+Given User move to login screen.............................................passed
+When I Enter "imran.pbh@gmail.com" in login text field......................passed
+And I Enter "Register@12345" in password text field.........................passed
+When I Click on login button................................................passed
+Then I Verify the "" message................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
